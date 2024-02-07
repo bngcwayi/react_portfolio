@@ -1,0 +1,28 @@
+/* This is for the Navbar styling section */
+nav {
+  border: 1px;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  margin: auto;
+  width: 60%;
+  background-image: linear-gradient(#d4fff2, #f7f5de);
+  box-shadow: 5px 10px 10px #dddbc6;
+}
+a {
+  text-align: center;
+  color: #000;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eacb56;
+  border-top: thick double;
+  border-width: 3px;
+  border-top-left-radius: 20%;
+}
+
+/*Navbar media queries*/
