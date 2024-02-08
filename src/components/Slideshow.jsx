@@ -5,7 +5,13 @@ export const Slideshow = ({ data }) => {
     <div className="carousel">
       {data.map((item, idx) => {
         return (
-          <img src={item.src} alt={item.alt} width={item.width} key={idx} />
+          <img
+            src={item.src}
+            alt={item.alt}
+            width={item.width}
+            key={idx}
+            className="slide"
+          />
         );
       })}
     </div>
