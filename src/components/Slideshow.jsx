@@ -1,5 +1,11 @@
 import "./Slideshow.css";
 
-function Slideshow() {}
-
-export default Slideshow;
+export const Slideshow = ({ data }) => {
+  return (
+    <div>
+      {data.map((item, idx) => {
+        return <img src={item.src} alt={item.alt} key={idx} />;
+      })}
+    </div>
+  );
+};

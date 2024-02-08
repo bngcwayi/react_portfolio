@@ -1,8 +1,9 @@
 {
-  "slides": [
+  "Slides": [
     {
       "src": "../src/images/Slide_01.png",
-      "alt": "slide1-photo"
+      "alt": "slide1-photo",
+      "width": "200"
     },
     {
       "src": "../src/images/Slide_02.png",
