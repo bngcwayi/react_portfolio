@@ -1,8 +1,11 @@
 import "./Slideshow.css";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const Slideshow = ({ data }) => {
   return (
     <div className="carousel">
+      <BsArrowLeftCircleFill />
+
       {data.map((item, idx) => {
         return (
           <img
@@ -14,6 +17,7 @@ export const Slideshow = ({ data }) => {
           />
         );
       })}
+      <BsArrowRightCircleFill />
     </div>
   );
 };
