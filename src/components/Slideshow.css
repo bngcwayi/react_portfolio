@@ -6,7 +6,7 @@
   width: 600px;
   height: 400px;
   display: flex;
-  margin: 2.5rem;
+  margin: 2.5rem 24rem;
 }
 
 .slide {
@@ -26,15 +26,15 @@
   position: absolute;
   width: 2rem;
   height: 2rem;
-  color: #fff;
+  color: #d4fff2;
   filter: drop-shadow(0px 0px 5px #555);
 }
 
 .arrow-left {
-  left: 0.5rem;
+  left: 0.2rem;
 }
 .arrow-right {
-  right: 0.5rem;
+  right: 0.2rem;
 }
 
 .indicators {
