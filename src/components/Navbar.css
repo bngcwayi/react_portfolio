@@ -44,6 +44,4 @@ a:hover {
 }
 
 /*Navbar media queries*/
-@media (max-width: 600px) {
-  border: none;
-}
+@media (max-width: 600px);
