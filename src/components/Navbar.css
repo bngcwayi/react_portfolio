@@ -8,7 +8,12 @@ nav {
   background-image: linear-gradient(#d4fff2, #f7f5de);
   box-shadow: 5px 10px 10px #dddbc6;
 }
-a {
+
+ul {
+  list-style: none;
+}
+
+ul li a {
   text-align: center;
   color: #000;
   font-size: 1.2rem;

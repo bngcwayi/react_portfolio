@@ -3,11 +3,24 @@ function Navbar() {
   return (
     <div>
       <nav>
-        <a href="">Home |</a>
-        <a href="">About |</a>
-        <a href="">Projects |</a>
-        <a href="">Get in touch |</a>
-        <a href="">Resume |</a>
+        <ul>
+          <li>
+            <a href="">Home </a>
+          </li>
+          <li>
+            <a href="">About </a>
+          </li>
+          <li>
+            <a href="">Projects </a>
+          </li>
+          <li>
+            <a href="">Get in touch </a>
+          </li>
+          <li>
+            <a href="">Resume </a>
+          </li>
+          <li></li>
+        </ul>
       </nav>
     </div>
   );
