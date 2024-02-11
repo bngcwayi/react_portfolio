@@ -19,7 +19,7 @@ function Navbar() {
             <a href="#">Projects </a>
           </li>
           <li>
-            <a href="#">Get in touch </a>
+            <a href="#">Contact </a>
           </li>
           <li>
             <a href="#">Resume </a>

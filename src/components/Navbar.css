@@ -1,10 +1,8 @@
 /* This is for the Navbar styling section */
 nav {
   border-radius: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: auto;
-  width: 70%;
-  height: 60%;
   background-image: linear-gradient(#d4fff2, #f7f5de);
   box-shadow: 5px 5px 5px #dddbc6;
   font-weight: 700;
@@ -46,12 +44,102 @@ a:hover {
 
 label #btn,
 label #cancel {
-  color: red;
+  color: #eacb56;
+  font-size: 2.5rem;
+  float: center;
+  line-height: 5rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+
+#check {
+  display: none;
 }
 
 /*Navbar media queries*/
+@media (max-width: 400px) {
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+}
 @media (max-width: 600px) {
   nav {
     border: none;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+  /* lets see*/
+  /*Navbar media queries*/
+  @media (max-width: 600px) {
+    nav {
+      border: none;
+      padding: 0;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-bottom: 10px;
+    }
+
+    label #btn {
+      display: block;
+    }
+
+    #check:checked ~ ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+    }
+  }
+}
+@media (max-width: 770px) {
+  nav ul li a {
+    font-size: 1rem;
+  }
+  nav {
+    border: none;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  label #btn {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+  }
+}
+@media (min-width: 944px) {
+  nav ul li a {
+    font-size: 1.2rem;
   }
 }
