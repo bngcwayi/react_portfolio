@@ -39,10 +39,14 @@ ul li a {
 
 a:hover {
   color: #eacb56;
-  border-top: thick double;
+  border-bottom: solid;
   border-width: 3px;
-  border-top-left-radius: 20%;
+  transition: 1s, color 1s;
 }
 
 /*Navbar media queries*/
-@media (max-width: 600px);
+@media (max-width: 600px) {
+  nav {
+    border: none;
+  }
+}
