@@ -44,6 +44,11 @@ a:hover {
   transition: 1s, color 1s;
 }
 
+label #btn,
+label #cancel {
+  color: red;
+}
+
 /*Navbar media queries*/
 @media (max-width: 600px) {
   nav {
