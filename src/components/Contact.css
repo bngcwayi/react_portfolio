@@ -8,9 +8,10 @@ form {
   background-image: linear-gradient(#d4fff2, #f7f5de);
   line-height: 2rem;
   margin: 1rem;
-  padding: 2rem;
-  width: 500px;
-  border: 1px solid;
+  padding: 1rem;
+  width: 600px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 3rem;
 }
 
@@ -18,7 +19,7 @@ form {
 .email,
 .textarea,
 .submit-button {
-  padding: 0.5rem;
+  padding: 0.3rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,10 @@
+.img {
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  margin: 0 1rem;
+}

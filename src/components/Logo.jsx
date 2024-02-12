@@ -2,7 +2,7 @@ import "./Logo.css";
 
 function Logo() {
   return (
-    <div>
+    <div className="logo">
       <img
         src={"/src/images/Logo_v2.png"}
         alt="Top-logo"
