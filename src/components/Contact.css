@@ -34,6 +34,16 @@ textarea {
   border-radius: 0.5rem;
   resize: none;
 }
+.name input[type="text"]:focus,
+.email input[type="email"]:focus {
+  border-bottom: 2px solid #eacb65; /* Change border color when focused */
+  outline: none; /* Remove default focus outline */
+}
+
+.textarea textarea:focus {
+  border: 2px solid #eacb65; /* Change border color when focused */
+  outline: none; /* Remove default focus outline */
+}
 .name,
 .email,
 .textarea,
