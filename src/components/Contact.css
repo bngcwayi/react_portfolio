@@ -1,0 +1,15 @@
+/*Contact form styling section*/
+.form-container {
+  border: 1px solid;
+}
+form {
+  background-image: linear-gradient(#d4fff2, #f7f5de);
+  line-height: 1.5rem;
+  margin: 2rem;
+}
+
+fieldset {
+  margin: 1.5rem;
+  color: #f7f5de;
+  background-color: #f7f5de;
+}
