@@ -1,4 +1,9 @@
 /*Contact form styling section*/
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+}
 .form-container {
   display: flex;
   justify-content: center;
@@ -7,18 +12,32 @@
 form {
   background-image: linear-gradient(#d4fff2, #f7f5de);
   line-height: 2rem;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   width: 600px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  border-radius: 3rem;
+  border-radius: 0.5rem 1rem;
 }
-
+.name input[type="text"],
+.email input[type="email"] {
+  width: calc(270px - 1rem);
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+textarea {
+  padding: 0.5rem;
+  border: 1px solid;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  resize: none;
+}
 .name,
 .email,
 .textarea,
-.submit-button {
+button {
   padding: 0.3rem;
   display: flex;
   justify-content: center;
@@ -26,17 +45,20 @@ form {
   margin-bottom: 1rem;
 }
 
-.submit-button {
-  border-radius: 3rem;
-  background-color: #eacb65;
+button {
+  border-radius: 0.5rem 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 9rem;
 }
 
 #submit-btn {
+  border: none;
   font-size: 1.2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;
-  border: none;
-  background-color: transparent;
+  font-weight: 500;
+  background-color: #eacb65;
   cursor: pointer;
-  width: 100%;
 }

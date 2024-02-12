@@ -23,19 +23,17 @@ function Contact() {
             <textarea
               name="textarea"
               id="textarea"
-              cols="30"
-              rows="10"
+              cols="37"
+              rows="6"
               placeholder="Message me.."
               required
             ></textarea>
           </label>
         </div>
 
-        <div className="submit-button">
-          <button type="submit" id="submit-btn">
-            Send email
-          </button>
-        </div>
+        <button type="submit" id="submit-btn">
+          Send email
+        </button>
       </form>
     </div>
   );

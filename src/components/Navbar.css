@@ -1,6 +1,6 @@
 /* This is for the Navbar styling section */
 nav {
-  border-radius: 2rem;
+  border-radius: 0.5rem 1rem;
   padding: 1rem;
   margin: auto;
   background-image: linear-gradient(#d4fff2, #f7f5de);
