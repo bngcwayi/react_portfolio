@@ -6,6 +6,7 @@ function Contact() {
       <form action="">
         <div className="formHeading">
           <h3>Get in Touch</h3>
+          <p>Thank you for visiting my portfolio website</p>
         </div>
         <div className="name">
           <label htmlFor="name">
@@ -25,7 +26,7 @@ function Contact() {
               id="textarea"
               cols="37"
               rows="6"
-              placeholder="Message me.."
+              placeholder="I'd like to chat about.."
               required
             ></textarea>
           </label>
