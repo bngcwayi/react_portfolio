@@ -1,15 +1,33 @@
 /*Contact form styling section*/
 .form-container {
-  border: 1px solid;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 form {
   background-image: linear-gradient(#d4fff2, #f7f5de);
-  line-height: 1.5rem;
-  margin: 2rem;
+  line-height: 2rem;
+  margin: 1rem;
+  padding: 2rem;
+  width: 500px;
+  border: 1px solid;
+  border-radius: 3rem;
 }
 
-fieldset {
-  margin: 1.5rem;
-  color: #f7f5de;
-  background-color: #f7f5de;
+.name,
+.email,
+.textarea,
+.submit-button {
+  border: 1px dotted;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  border-radius: 3rem;
+  background-color: #eacb65;
 }

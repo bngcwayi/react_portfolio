@@ -3,24 +3,26 @@ import "./Contact.css";
 function Contact() {
   return (
     <div className="form-container">
-      <h3>Get in Touch</h3>
       <form action="">
-        <div className="Name">
+        <div className="formHeading">
+          <h3>Get in Touch</h3>
+        </div>
+        <div className="name">
           <label htmlFor="name">
             <input type="text" name="name" placeholder="Name" required />
           </label>
         </div>
-        <div classNme="email">
+        <div className="email">
           <label htmlFor="email">
-            <input type="email" placeholder="Email" required />
+            <input type="email" name="email" placeholder="Email" required />
           </label>
         </div>
 
         <div className="textarea">
           <label htmlFor="textarea">
             <textarea
-              name=""
-              id=""
+              name="textarea"
+              id="textarea"
               cols="30"
               rows="10"
               placeholder="Message me.."
@@ -30,7 +32,9 @@ function Contact() {
         </div>
 
         <div className="submit-button">
-          <button type="submit">Send email</button>
+          <button type="submit" id="submit-btn">
+            Send email
+          </button>
         </div>
       </form>
     </div>
