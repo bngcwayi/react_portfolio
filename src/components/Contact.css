@@ -1,17 +1,20 @@
 /*Contact form styling section*/
 
 h3 {
+  font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-weight: 900;
   font-size: 1.5rem;
   padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-p {
+.formHeading p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #9b9797;
   text-align: center;
-  font-weight: 500;
-  padding: 10px;
 }
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -75,8 +78,8 @@ button {
 #submit-btn {
   border: none;
   font-size: 1.2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 900;
   background-color: #eacb65;
   cursor: pointer;
 }
