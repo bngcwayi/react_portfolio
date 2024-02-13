@@ -3,7 +3,7 @@ import "./Projects.css";
 function Projects() {
   return (
     <div className="projectContainer">
-      <ul className="card-wrapper">
+      <ul className="cardWrapper">
         <li className="project01">
           <img
             src={"/src/images/Naruto.png"}
@@ -22,32 +22,33 @@ function Projects() {
 
         <li className="project02">
           <img
-            src={"/src/images/Naruto.png"}
+            src={"/src/images/product_page_2.png"}
             alt="Top-logo"
             width="300"
             height=""
           />
           <h3>
-            <a href="">Tribute Page:Naruto</a>
+            <a href="">Product Page</a>
           </h3>
           <p>
-            This tribute page honors the ninja's resilience, showcasing how he
-            triumphed over adversity and never wavered in pursuing his dreams.
+            Upgrade your home with affordable luxury and transform your
+            relaxation space with our user-friendly selection of sectional
+            couches.
           </p>
         </li>
         <li className="project03">
           <img
-            src={"/src/images/Naruto.png"}
+            src={"/src/images/Weather_App.png"}
             alt="Top-logo"
             width="300"
             height=""
           />
           <h3>
-            <a href="">Tribute Page:Naruto</a>
+            <a href="">Weather_App</a>
           </h3>
           <p>
-            This tribute page honors the ninja's resilience, showcasing how he
-            triumphed over adversity and never wavered in pursuing his dreams.
+            Stay ahead of the weather with our user-friendly app that provides
+            real-time updates on temperature, precipitation and wind conditions.
           </p>
         </li>
       </ul>

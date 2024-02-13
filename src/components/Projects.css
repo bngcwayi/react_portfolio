@@ -1,10 +1,24 @@
-.card-wrapper {
-  margin: 1rem;
+.cardWrapper {
+  margin: 0 0 2rem;
   text-decoration: none;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.1s;
+  color: #f7f5de;
+}
+.cardWrapper:hover {
+  border: 1px solid;
+  transform: scale(1.05);
+}
+
+.cardWrapper:active {
+  transform: scale(0.95) rotateZ(1.7deg);
 }
 
 .project01,
