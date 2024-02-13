@@ -5,7 +5,6 @@ function Projects() {
     <div className="projectContainer">
       <ul className="card-wrapper">
         <li className="project01">
-          Project01
           <img
             src={"/src/images/Naruto.png"}
             alt="Top-logo"
@@ -22,7 +21,6 @@ function Projects() {
         </li>
 
         <li className="project02">
-          Project02
           <img
             src={"/src/images/Naruto.png"}
             alt="Top-logo"
@@ -38,7 +36,6 @@ function Projects() {
           </p>
         </li>
         <li className="project03">
-          Project03
           <img
             src={"/src/images/Naruto.png"}
             alt="Top-logo"
