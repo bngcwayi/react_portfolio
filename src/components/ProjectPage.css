@@ -1,0 +1,21 @@
+.cardContainer {
+  margin: 0 0 2rem;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1rem;
+  text-align: center;
+  width: 50%;
+}
+
+.projectNaruto {
+  border: 2px;
+  margin: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 2rem;
+}
