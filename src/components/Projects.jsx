@@ -40,7 +40,7 @@ function Projects() {
           <img
             src={"/src/images/Weather_App.png"}
             alt="Top-logo"
-            width="295"
+            width="300"
             height=""
           />
           <h3>
