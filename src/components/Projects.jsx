@@ -25,7 +25,7 @@ function Projects() {
             src={"/src/images/product_page_2.png"}
             alt="Top-logo"
             width="300"
-            height=""
+            height="222"
           />
           <h3>
             <a href="">Product Page</a>
@@ -40,7 +40,7 @@ function Projects() {
           <img
             src={"/src/images/Weather_App.png"}
             alt="Top-logo"
-            width="300"
+            width="295"
             height=""
           />
           <h3>
