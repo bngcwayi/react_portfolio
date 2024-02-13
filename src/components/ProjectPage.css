@@ -1,15 +1,20 @@
-.cardContainer {
-  margin: 0 0 2rem;
-  text-decoration: none;
-  list-style: none;
+.projectPage {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cardContainer {
+  margin: 1rem 0 1rem;
+  text-decoration: none;
+  list-style: none;
   border: 1px solid;
+  background-image: linear-gradient(#e7fae7, #f7f5de);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 1rem;
   text-align: center;
-  width: 50%;
+  width: 35%;
+  height: 50%;
 }
 
 .projectNaruto {
