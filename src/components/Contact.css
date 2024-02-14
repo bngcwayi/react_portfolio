@@ -1,5 +1,4 @@
 /*Contact form styling section*/
-
 h3 {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
@@ -47,13 +46,13 @@ textarea {
 }
 .name input[type="text"]:focus,
 .email input[type="email"]:focus {
-  border-bottom: 2px solid #eacb65; /* Change border color when focused */
-  outline: none; /* Remove default focus outline */
+  border-bottom: 2px solid #eacb65;
+  outline: none;
 }
 
 .textarea textarea:focus {
-  border: 2px solid #eacb65; /* Change border color when focused */
-  outline: none; /* Remove default focus outline */
+  border: 2px solid #eacb65;
+  outline: none;
 }
 .name,
 .email,
@@ -82,4 +81,5 @@ textarea {
   font-weight: 900;
   background-color: #eacb65;
   cursor: pointer;
+  padding: 0.3rem;
 }
