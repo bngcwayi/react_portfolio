@@ -1,6 +1,6 @@
 import "./About.css";
 
 function About() {
-  return <div></div>;
+  return <div className="AboutMe"></div>;
 }
 export default About;
