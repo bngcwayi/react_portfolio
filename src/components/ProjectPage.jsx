@@ -21,10 +21,9 @@ function ProjectPage() {
             width="250"
             height=""
           />
-
-          <a href="">
-            <button className="LearnMore-btn">Learn more</button>
-          </a>
+          <button className="LearnMore-btn">
+            <a href="">Learn more</a>
+          </button>
         </li>
       </ul>
     </div>
