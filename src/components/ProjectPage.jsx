@@ -6,18 +6,25 @@ function ProjectPage() {
       <ul className="cardContainer">
         <li className="projectNaruto">
           <h3>Tribute Page:Naruto</h3>
-          <button className="launch-btn">Launch</button>
+          <button className="launch-btn">
+            <a href="">Launch </a>
+          </button>
+          <p>
+            Naruto Uzumaki, is known for his friendly charm and never-give-up
+            spirit. His perseverance in the face of challenges and his dream of
+            becoming the Hokage make him a beloved and inspiring character for
+            fans around the world.
+          </p>
           <img
             src={"/src/images/Naruto.png"}
             alt="Top-logo"
             width="250"
             height=""
           />
-          <p>
-            This tribute page honors the ninja's resilience, showcasing how he
-            triumphed over adversity and never wavered in pursuing his dreams.
-          </p>
-          <button className="LearnMore-btn">Learn more + github icon</button>
+
+          <a href="">
+            <button className="LearnMore-btn">Learn more</button>
+          </a>
         </li>
       </ul>
     </div>
