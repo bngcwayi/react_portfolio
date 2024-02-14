@@ -15,7 +15,6 @@ function ProjectPage() {
             width="250"
             height=""
           />
-
           <p>
             This tribute page honors the ninja's resilience, showcasing how he
             triumphed over adversity and never wavered in pursuing his dreams.
