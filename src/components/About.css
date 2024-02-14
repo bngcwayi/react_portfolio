@@ -1,3 +1,28 @@
-.Skills {
+.AboutMe {
   margin: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.Skills {
+  display: grid;
+  border: 2px solid red;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+  background-color: #f7f5de;
+  padding: 5px;
+}
+
+.Skills > div {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 2rem;
+}
+
+.item1 {
+  grid-row: 1 / span 1;
+}
+.item2 {
+  grid-row: 1 / span 1;
 }
