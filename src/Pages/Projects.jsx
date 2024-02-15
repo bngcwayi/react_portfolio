@@ -15,7 +15,7 @@ function Projects() {
             width="300"
             height=""
           />
-          <h3>
+          <h3 className="ProjectTitle">
             <a href="">Tribute Page:Naruto</a>
           </h3>
           <p>
@@ -37,7 +37,7 @@ function Projects() {
             width="300"
             height="222"
           />
-          <h3>
+          <h3 className="ProjectTitle">
             <a href="">Product Page</a>
           </h3>
           <p>
@@ -59,7 +59,7 @@ function Projects() {
             width="300"
             height=""
           />
-          <h3>
+          <h3 className="ProjectTitle">
             <a href="">Weather_App</a>
           </h3>
           <p>
