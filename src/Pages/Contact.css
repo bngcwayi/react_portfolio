@@ -96,13 +96,13 @@ textarea {
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
   form {
-    width: 90%; /* Adjust the width for smaller screens */
+    width: 90%;
   }
 }
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
   form {
-    width: 90%; /* Adjust the width for smaller screens */
+    width: 70%;
   }
 }
