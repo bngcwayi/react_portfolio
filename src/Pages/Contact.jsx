@@ -13,18 +13,30 @@ function Contact() {
           <p>Thank you for visiting my portfolio website</p>
         </div>
         <div className="name">
-          <label htmlFor="name">
-            <input type="text" name="name" placeholder="Name" required />
+          <label for="name">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
           </label>
         </div>
         <div className="email">
-          <label htmlFor="email">
-            <input type="email" name="email" placeholder="Email" required />
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
           </label>
         </div>
 
         <div className="textarea">
-          <label htmlFor="textarea">
+          <label for="textarea">
             <textarea
               name="textarea"
               id="textarea"
