@@ -22,6 +22,12 @@ function Projects() {
             This tribute page honors the ninja's resilience, showcasing how he
             triumphed over adversity and never wavered in pursuing his dreams.
           </p>
+          <button className="launch-btn">
+            <a href="">Launch </a>
+          </button>
+          <button className="LearnMore-btn">
+            <a href="">Learn more</a>
+          </button>
         </li>
 
         <li className="project02">
@@ -39,6 +45,12 @@ function Projects() {
             relaxation space with our user-friendly selection of sectional
             couches.
           </p>
+          <button className="launch-btn">
+            <a href="">Launch </a>
+          </button>
+          <button className="LearnMore-btn">
+            <a href="">Learn more</a>
+          </button>
         </li>
         <li className="project03">
           <img
@@ -54,6 +66,12 @@ function Projects() {
             Stay ahead of the weather with our user-friendly app that provides
             real-time updates on temperature, precipitation and wind conditions.
           </p>
+          <button className="launch-btn">
+            <a href="">Launch </a>
+          </button>
+          <button className="LearnMore-btn">
+            <a href="">Learn more</a>
+          </button>
         </li>
       </ul>
     </div>
