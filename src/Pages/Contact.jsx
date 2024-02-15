@@ -1,8 +1,12 @@
 import "./Contact.css";
+import Navbar from "../components/Navbar";
 
 function Contact() {
   return (
     <div className="form-container">
+      <div className="AdjustNav">
+        <Navbar />
+      </div>
       <form action="">
         <div className="formHeading">
           <h3>Get in Touch</h3>

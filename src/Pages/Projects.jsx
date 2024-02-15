@@ -1,8 +1,12 @@
 import "./Projects.css";
+import Navbar from "../components/Navbar";
 
 function Projects() {
   return (
     <div className="projectContainer">
+      <div className="AdjustNav">
+        <Navbar />
+      </div>
       <ul className="cardWrapper">
         <li className="project01">
           <img

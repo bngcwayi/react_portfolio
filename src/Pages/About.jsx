@@ -3,10 +3,11 @@ import Navbar from "../components/Navbar";
 
 function About() {
   return (
-    <div className="AboutMe" id="About">
-      <div>
+    <div className="AboutMe">
+      <div className="AdjustNav">
         <Navbar />
       </div>
+
       <div className="About">
         <img
           src={"/src/images/AboutMePhoto (1).png"}

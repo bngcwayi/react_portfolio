@@ -1,6 +1,6 @@
 .AboutMe {
   margin: 2rem;
-  display: flex;
+  display: block;
   flex-direction: row;
 }
 .AboutMe .About p {

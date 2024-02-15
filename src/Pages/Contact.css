@@ -1,3 +1,9 @@
+/*Adjust navbar position*/
+
+.AdjustNav {
+  margin-bottom: 5rem;
+}
+
 /*Contact form styling section*/
 h3 {
   font-family: "Roboto Condensed", sans-serif;
@@ -15,7 +21,7 @@ h3 {
 }
 
 .form-container {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
