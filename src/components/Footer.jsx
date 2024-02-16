@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"; // Import Linkedin icon
-import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Import github icon
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -10,15 +10,18 @@ function Footer() {
       <footer>
         <ul>
           <li>
-            <a href="">
-              <FontAwesomeIcon icon={faLinkedin} /> {/* Use LinkedIn icon */}
+            <a
+              href="https://www.linkedin.com/in/babalwa-portia-ngcwayi-24618264/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="LinkedInIcon" />
             </a>
-            LinkedIn icon
           </li>
-          <a href="">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <li>Github icon</li>
+          <li>
+            <a href="https://github.com/bngcwayi" target="_blank">
+              <FontAwesomeIcon icon={faGithub} className="GithubIcon" />
+            </a>
+          </li>
         </ul>
         <h3>bngcwayi@gmail.com</h3>
         <h2>Babalwa Ngcwayi, Cape Town, South Africa</h2>
