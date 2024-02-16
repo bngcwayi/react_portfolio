@@ -1,0 +1,36 @@
+/*footer styling section */
+
+.Footer {
+  border: 2px solid red;
+  background-image: linear-gradient(#f7f5de, #d4fff2);
+}
+.Footer ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer ul li {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 1rem;
+}
+footer ul li a {
+  border: 2px solid teal;
+}
+footer h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+footer h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
