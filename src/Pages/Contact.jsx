@@ -1,5 +1,6 @@
 import "./Contact.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Contact() {
   return (
@@ -52,6 +53,8 @@ function Contact() {
           Send email
         </button>
       </form>
+
+      <Footer />
     </div>
   );
 }

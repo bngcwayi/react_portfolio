@@ -17,6 +17,22 @@ footer ul li {
   padding: 1rem;
   text-decoration: none;
 }
+.Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Icons ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust as needed */
+}
 
 .LinkedInIcon {
   font-size: 3rem;
@@ -27,18 +43,13 @@ footer ul li {
   font-size: 3rem;
   color: #1f2328;
 }
-footer h3 {
+footer h3,
+footer h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   text-align: center;
   margin: 1rem;
-}
-
-footer h2 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 1rem;
+  font-style: normal;
+  color: #9b9797;
 }

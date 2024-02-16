@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className="Footer">
       <footer>
-        <ul>
+        <ul className="Icons">
           <li>
             <a
               href="https://www.linkedin.com/in/babalwa-portia-ngcwayi-24618264/"
