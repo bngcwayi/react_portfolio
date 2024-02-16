@@ -32,17 +32,17 @@ function About() {
         <div className="item1">
           <h6>React</h6>
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/React_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item2">
-          <h6>CSS</h6>
+          <h6>JavaScript</h6>
           {""}
           <img
-            src={"./src/images/CSS_Icon.png"}
+            src={"/src/images/Javascript_Icon.png"}
             alt="Top-logo"
             width="100"
             height="100"
@@ -51,72 +51,72 @@ function About() {
         <div className="item3">
           <h6>HTML</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/Html_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item4">
-          <h6>JavaScript</h6>{" "}
+          <h6>CSS</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/CSS_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item5">
-          <h6>Git</h6>{" "}
+          <h6>Python</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/Python_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item6">
           <h6>Figma</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/Figma_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item7">
           <h6>Miro</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/Miro_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item8">
-          <h6>Miro</h6>{" "}
+          <h6>Adobe Photoshop</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/Photoshop_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item9">
-          <h6>Adobe Photoshop</h6>{" "}
+          <h6>Git</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/Git_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item10">
-          <h6>Python</h6>{" "}
+          <h6>Github</h6>{" "}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"/src/images/Github_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
