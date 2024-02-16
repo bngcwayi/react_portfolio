@@ -16,15 +16,21 @@ function About() {
           height=""
         />
         <p>
-          I am driven by a passion for crafting user-friendly applications with
-          a keen focus on problem-solving. I thrive on taking initiative and
-          find joy in contributing effectively within a collaborative team
-          environment. Committed to continuous learning, I aspire to make
-          meaningful contributions to the world of software development.
+          I am dedicated to always learning and growing, striving to make a
+          positive impact in the software development space.
+          <br />
+          Transitioning to tech ignited my passion for problem-solving, showing
+          me the endless possibilities in this field.
+          <br />
+          With a long-term commitment to this career, I aim to not only fulfill
+          my aspirations but also provide for my family, ensuring a stable and
+          fulfilling future.
         </p>
       </div>
       <div className="Skills">
+        <h1></h1>
         <div className="item1">
+          <h6>React</h6>
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -33,16 +39,17 @@ function About() {
           />
         </div>
         <div className="item2">
-          {" "}
+          <h6>CSS</h6>
+          {""}
           <img
-            src={"/src/images/Logo_v2.png"}
+            src={"./src/images/CSS_Icon.png"}
             alt="Top-logo"
-            width="150"
+            width="100"
             height="100"
           />
         </div>
         <div className="item3">
-          {" "}
+          <h6>HTML</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -51,7 +58,7 @@ function About() {
           />
         </div>
         <div className="item4">
-          {" "}
+          <h6>JavaScript</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -60,7 +67,7 @@ function About() {
           />
         </div>
         <div className="item5">
-          {" "}
+          <h6>Git</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -69,7 +76,7 @@ function About() {
           />
         </div>
         <div className="item6">
-          {" "}
+          <h6>Figma</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -78,7 +85,7 @@ function About() {
           />
         </div>
         <div className="item7">
-          {" "}
+          <h6>Miro</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -87,7 +94,7 @@ function About() {
           />
         </div>
         <div className="item8">
-          {" "}
+          <h6>Miro</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -96,7 +103,7 @@ function About() {
           />
         </div>
         <div className="item9">
-          {" "}
+          <h6>Adobe Photoshop</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
@@ -105,7 +112,7 @@ function About() {
           />
         </div>
         <div className="item10">
-          {" "}
+          <h6>Python</h6>{" "}
           <img
             src={"/src/images/Logo_v2.png"}
             alt="Top-logo"
