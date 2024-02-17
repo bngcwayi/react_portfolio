@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Slideshow.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const Slideshow = ({ data }) => {
   const [Slides, setSlide] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [Slides]);
 
   const nextSlide = () => {
     setSlide(Slides === data.length - 1 ? 0 : Slides + 1);

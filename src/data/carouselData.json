@@ -3,18 +3,18 @@
     {
       "src": "../src/images/Slide_01.png",
       "alt": "slide1-photo",
-      "width": "300"
+      "width": "200"
     },
 
     {
       "src": "../src/images/Slide_02.png",
       "alt": "slide2-photo",
-      "width": "300"
+      "width": "200"
     },
     {
       "src": "../src/images/Slide_03.png",
       "alt": "slide3-photo",
-      "width": " 300"
+      "width": " 200"
     }
   ]
 }

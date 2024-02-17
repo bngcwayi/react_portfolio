@@ -6,8 +6,8 @@ function Logo() {
       <img
         src={"/src/images/Logo_v2.png"}
         alt="Top-logo"
-        width="220"
-        height="120"
+        width="150"
+        height=""
       />
     </div>
   );

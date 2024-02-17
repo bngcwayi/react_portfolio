@@ -1,6 +1,7 @@
 /*footer styling section */
 .Footer {
   padding: 2rem;
+  background-image: linear-gradient(#f7f5de, #d4fff2);
 }
 .Footer ul {
   list-style: none;
