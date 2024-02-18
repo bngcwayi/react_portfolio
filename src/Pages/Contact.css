@@ -74,6 +74,13 @@ textarea {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/*email error message*/
+.error-message {
+  color: red;
+  margin-top: 5px;
+  display: none; /* Hide the error message by default */
+}
+
 #submit-btn {
   border: none;
   font-size: 1.2rem;

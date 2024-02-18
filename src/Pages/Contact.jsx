@@ -21,6 +21,8 @@ function Contact() {
               id="name"
               placeholder="Name"
               required
+              pattern="[A-Za-z\s]+"
+              title="Only letters and spaces are allowed"
             />
           </label>
         </div>
@@ -32,6 +34,7 @@ function Contact() {
               id="email"
               placeholder="Email"
               required
+              onChange={handleEmailChange}
             />
           </label>
         </div>
@@ -52,6 +55,7 @@ function Contact() {
         <button type="submit" id="submit-btn">
           Send email
         </button>
+        <span id="emailError" className="error-message"></span>
       </form>
       <div>
         {" "}
@@ -61,3 +65,16 @@ function Contact() {
   );
 }
 export default Contact;
+function handleEmailChange(event) {
+  const email = event.target.value;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const emailError = document.getElementById("emailError");
+
+  if (!emailPattern.test(email)) {
+    emailError.textContent = "Please enter a valid email address.";
+    emailError.style.display = "inline"; // Make the error message visible
+  } else {
+    emailError.textContent = ""; // Clear the error message
+    emailError.style.display = "none"; // Hide the error message
+  }
+}
