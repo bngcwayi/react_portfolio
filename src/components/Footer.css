@@ -1,5 +1,6 @@
 /*footer styling section */
 .Footer {
+  margin-top: 2rem;
   padding: 2rem;
   background-image: linear-gradient(#f7f5de, #d4fff2);
 }
@@ -51,4 +52,11 @@ footer h2 {
   margin: 1rem;
   font-style: normal;
   color: #9b9797;
+}
+/*media queries*/
+
+@media (max-width: 1024px) {
+  .Footer {
+    margin-top: 5rem;
+  }
 }
