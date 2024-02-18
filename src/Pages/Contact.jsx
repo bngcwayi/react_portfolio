@@ -53,8 +53,10 @@ function Contact() {
           Send email
         </button>
       </form>
-
-      <Footer />
+      <div>
+        {" "}
+        <Footer />
+      </div>
     </div>
   );
 }
