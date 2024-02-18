@@ -3,7 +3,7 @@
 .carousel {
   position: relative;
   width: 600px; /* Default width */
-  margin: 2rem auto; /* Center the carousel */
+  margin: 4rem auto; /* Center the carousel */
   height: 400px; /* Set a fixed height for the carousel */
 }
 .carousel img {
