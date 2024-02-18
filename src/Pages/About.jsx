@@ -72,7 +72,7 @@ function About() {
             src={"/src/images/Python_Icon.png"}
             alt="Top-logo"
             width="100"
-            height="100"
+            height="90"
           />
         </div>
         <div className="item6">
@@ -81,7 +81,7 @@ function About() {
             src={"/src/images/Figma_Icon.png"}
             alt="Top-logo"
             width="100"
-            height="100"
+            height="90"
           />
         </div>
         <div className="item7">
