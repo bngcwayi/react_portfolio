@@ -15,7 +15,9 @@ const Resume = () => {
 
   return (
     <div className="ResumeButton">
-      <Navbar />
+      <div className="AdjustNav">
+        <Navbar />
+      </div>
 
       <button onClick={openInNewTab} className="ResumePage">
         Download Resume

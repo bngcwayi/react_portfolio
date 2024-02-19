@@ -1,7 +1,13 @@
+.ResumeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .ResumeButton .ResumePage {
-  border: 2px solid red;
   margin: 3rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 0.5rem 1rem;
   border: none;
   font-size: 1.2rem;
@@ -9,5 +15,12 @@
   font-weight: 900;
   background-color: #eacb65;
   cursor: pointer;
-  width: 50%;
+  width: 30%;
+}
+
+.ResumeButton .ResumePage:hover {
+  background-color: #cab264;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+  width: 30%;
 }
