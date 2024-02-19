@@ -1,0 +1,13 @@
+.ResumeButton .ResumePage {
+  border: 2px solid red;
+  margin: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 900;
+  background-color: #eacb65;
+  cursor: pointer;
+  width: 50%;
+}
