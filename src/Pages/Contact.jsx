@@ -1,8 +1,6 @@
 import "./Contact.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 
 function Contact() {
   return (
@@ -10,7 +8,7 @@ function Contact() {
       <div className="AdjustNav">
         <Navbar />
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form action="">
         <div className="formHeading">
           <h3>Get in Touch</h3>
           <p>Thank you for visiting my portfolio website</p>
@@ -19,7 +17,7 @@ function Contact() {
           <label for="name">
             <input
               type="text"
-              name="user_name"
+              name="name"
               id="name"
               placeholder="Name"
               required
@@ -32,7 +30,7 @@ function Contact() {
           <label for="email">
             <input
               type="email"
-              name="user_email"
+              name="email"
               id="email"
               placeholder="Email"
               required
