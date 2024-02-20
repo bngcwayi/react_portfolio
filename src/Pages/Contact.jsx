@@ -1,11 +1,12 @@
 import "./Contact.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const form = useRef();
+  const [messageStatus, setMessageStatus] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,10 +17,10 @@ export const Contact = () => {
       })
       .then(
         () => {
-          window.alert("Thank you. Message Sent!");
+          setMessageStatus("Thank you. Message Sent!");
         },
         (error) => {
-          window.alert("Failed to send message. Please try again.", error.text);
+          setMessageStatus("Failed to send message. Please try again.");
         }
       );
   };
@@ -77,6 +78,7 @@ export const Contact = () => {
           Send email
         </button>
         <span id="emailError" className="error-message"></span>
+        {messageStatus && <div className="message-status">{messageStatus}</div>}
       </form>
       <div>
         {" "}
