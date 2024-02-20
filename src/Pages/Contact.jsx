@@ -1,14 +1,35 @@
 import "./Contact.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-function Contact() {
+export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_1h8su7n", "template_o1odrcq", form.current, {
+        publicKey: "mVseHYyiuFmFU-pTL",
+      })
+      .then(
+        () => {
+          window.alert("Thank you. Message Sent!");
+        },
+        (error) => {
+          window.alert("Failed to send message. Please try again.", error.text);
+        }
+      );
+  };
+
   return (
     <div className="form-container">
       <div className="AdjustNav">
         <Navbar />
       </div>
-      <form action="">
+      <form ref={form} onSubmit={sendEmail}>
         <div className="formHeading">
           <h3>Get in Touch</h3>
           <p>Thank you for visiting my portfolio website</p>
@@ -17,7 +38,7 @@ function Contact() {
           <label for="name">
             <input
               type="text"
-              name="name"
+              name="from_name"
               id="name"
               placeholder="Name"
               required
@@ -30,7 +51,7 @@ function Contact() {
           <label for="email">
             <input
               type="email"
-              name="email"
+              name="from_email"
               id="email"
               placeholder="Email"
               required
@@ -42,7 +63,7 @@ function Contact() {
         <div className="textarea">
           <label for="textarea">
             <textarea
-              name="textarea"
+              name="message"
               id="textarea"
               cols="37"
               rows="6"
@@ -63,7 +84,8 @@ function Contact() {
       </div>
     </div>
   );
-}
+};
+
 export default Contact;
 function handleEmailChange(event) {
   const email = event.target.value;
