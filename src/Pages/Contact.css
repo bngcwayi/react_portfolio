@@ -76,7 +76,7 @@ textarea {
 
 /*email error message*/
 .error-message {
-  color: red;
+  color: #000;
   margin-top: 5px;
   display: none; /* Hide the error message by default */
 }
