@@ -11,9 +11,18 @@ export const Contact = () => {
   const [messageStatus, setMessageStatus] = useState("");
   const recaptcha = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const captchaValue = recaptcha.current.getValue();
+    if (!captchaValue) {
+      alert("Please verify the reCAPTCHA!");
+    } else {
+      sendEmail();
+      submitForm();
+    }
+  }
 
+  function sendEmail() {
     emailjs
       .sendForm("service_1h8su7n", "template_o1odrcq", form.current, {
         publicKey: "mVseHYyiuFmFU-pTL",
@@ -29,28 +38,11 @@ export const Contact = () => {
           );
         }
       );
-  };
-  async function submitForm(event) {
-    event.preventDefault();
-    const captchaValue = recaptcha.current.getValue();
-    if (!captchaValue) {
-      alert("Please verify the reCAPTCHA!");
-    } else {
-      const res = await fetch("http://localhost:8000/verify", {
-        method: "POST",
-        body: JSON.stringify({ captchaValue }),
-        headers: {
-          "content-type": "application/json",
-        },
-      });
-      const data = await res.json();
-      if (data.success) {
-        // make form submission
-        alert("Form submission successful!");
-      } else {
-        alert("reCAPTCHA validation failed!");
-      }
-    }
+  }
+
+  function submitForm() {
+    // Additional logic for form submission if needed
+    alert("Form submission successful!");
   }
 
   return (
@@ -58,13 +50,13 @@ export const Contact = () => {
       <div className="AdjustNav">
         <Navbar />
       </div>
-      <form onSubmit={submitForm} ref={form} onSubmit={sendEmail}>
+      <form onSubmit={handleSubmit} ref={form}>
         <div className="formHeading">
           <h3>Get in Touch</h3>
           <p>Thank you for visiting my portfolio website</p>
         </div>
         <div className="name">
-          <label for="name">
+          <label htmlFor="name">
             <input
               type="text"
               name="from_name"
@@ -77,7 +69,7 @@ export const Contact = () => {
           </label>
         </div>
         <div className="email">
-          <label for="email">
+          <label htmlFor="email">
             <input
               type="email"
               name="from_email"
@@ -90,7 +82,7 @@ export const Contact = () => {
         </div>
 
         <div className="textarea">
-          <label for="textarea">
+          <label htmlFor="textarea">
             <textarea
               name="message"
               id="textarea"
@@ -122,6 +114,7 @@ export const Contact = () => {
 };
 
 export default Contact;
+
 function handleEmailChange(event) {
   const email = event.target.value;
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
