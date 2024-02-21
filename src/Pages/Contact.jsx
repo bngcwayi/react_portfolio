@@ -36,8 +36,20 @@ export const Contact = () => {
     if (!captchaValue) {
       alert("Please verify the reCAPTCHA!");
     } else {
-      // make form submission
-      alert("Form submission successful!");
+      const res = await fetch("http://localhost:8000/verify", {
+        method: "POST",
+        body: JSON.stringify({ captchaValue }),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+      const data = await res.json();
+      if (data.success) {
+        // make form submission
+        alert("Form submission successful!");
+      } else {
+        alert("reCAPTCHA validation failed!");
+      }
     }
   }
 
