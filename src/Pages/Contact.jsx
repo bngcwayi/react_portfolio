@@ -4,9 +4,12 @@ import Footer from "../components/Footer";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+import ReCAPTCHA from "react-google-recaptcha";
+
 export const Contact = () => {
   const form = useRef();
   const [messageStatus, setMessageStatus] = useState("");
+  const recaptcha = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,17 +23,30 @@ export const Contact = () => {
           setMessageStatus("Thank you. Message Sent!");
         },
         (error) => {
-          setMessageStatus("Failed to send message. Please try again.");
+          setMessageStatus(
+            "Failed to send message. Please try again.",
+            error.text
+          );
         }
       );
   };
+  async function submitForm(event) {
+    event.preventDefault();
+    const captchaValue = recaptcha.current.getValue();
+    if (!captchaValue) {
+      alert("Please verify the reCAPTCHA!");
+    } else {
+      // make form submission
+      alert("Form submission successful!");
+    }
+  }
 
   return (
     <div className="form-container">
       <div className="AdjustNav">
         <Navbar />
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form onSubmit={submitForm} ref={form}>
         <div className="formHeading">
           <h3>Get in Touch</h3>
           <p>Thank you for visiting my portfolio website</p>
@@ -77,9 +93,14 @@ export const Contact = () => {
         <button type="submit" id="submit-btn">
           Send email
         </button>
+        <ReCAPTCHA
+          ref={recaptcha}
+          sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        />
         <span id="emailError" className="error-message"></span>
         {messageStatus && <div className="message-status">{messageStatus}</div>}
       </form>
+
       <div>
         {" "}
         <Footer />
