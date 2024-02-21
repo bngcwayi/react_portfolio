@@ -58,7 +58,7 @@ export const Contact = () => {
       <div className="AdjustNav">
         <Navbar />
       </div>
-      <form onSubmit={submitForm} ref={form}>
+      <form onSubmit={submitForm} ref={form} onSubmit={sendEmail}>
         <div className="formHeading">
           <h3>Get in Touch</h3>
           <p>Thank you for visiting my portfolio website</p>
