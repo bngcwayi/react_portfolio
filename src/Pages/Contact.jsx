@@ -97,10 +97,12 @@ export const Contact = () => {
         <button type="submit" id="submit-btn">
           Send email
         </button>
-        <ReCAPTCHA
-          ref={recaptcha}
-          sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-        />
+        <div className="RecaptchaContainer">
+          <ReCAPTCHA
+            ref={recaptcha}
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+          />
+        </div>
         <span id="emailError" className="error-message"></span>
         {messageStatus && <div className="message-status">{messageStatus}</div>}
       </form>
