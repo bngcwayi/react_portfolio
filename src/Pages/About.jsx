@@ -1,5 +1,7 @@
 import "./About.css";
 import Navbar from "../components/Navbar";
+import AboutMePhoto from "../../images/AboutMePhoto.png";
+import ReactIcon from "../../ReactIcon.png";
 
 function About() {
   return (
@@ -9,12 +11,7 @@ function About() {
       </div>
 
       <div className="About">
-        <img
-          src={"/src/images/AboutMePhoto (1).png"}
-          alt="Top-logo"
-          width="500"
-          height=""
-        />
+        <img src={AboutMePhoto} alt="profile-photo" width="500" height="" />
         <p>
           I am dedicated to always learning and growing, striving to make a
           positive impact in the software development space.
@@ -31,12 +28,7 @@ function About() {
         <h1></h1>
         <div className="item1">
           <h6>React</h6>
-          <img
-            src={"/src/images/React_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="100"
-          />
+          <img src={ReactIcon} alt="ReactIcon" width="100" height="100" />
         </div>
         <div className="item2">
           <h6>JavaScript</h6>

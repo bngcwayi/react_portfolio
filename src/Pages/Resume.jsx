@@ -1,6 +1,6 @@
 import React from "react";
 import "./Resume.css";
-import BabalwaNgcwayiCV from "../documents/BabalwaNgcwayiCV.pdf";
+import BabalwaNgcwayiCV from "../../BabalwaNgcwayiCV.pdf";
 import Navbar from "../components/Navbar";
 
 const Resume = () => {
