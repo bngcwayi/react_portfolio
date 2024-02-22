@@ -1,7 +1,7 @@
 import "./About.css";
 import Navbar from "../components/Navbar";
-import AboutMePhoto from "../../images/AboutMePhoto.png";
-import ReactIcon from "../../ReactIcon.png";
+import AboutMePhoto from "../images/AboutMePhoto.png";
+import ReactIcon from "../images/ReactIcon.png";
 
 function About() {
   return (
