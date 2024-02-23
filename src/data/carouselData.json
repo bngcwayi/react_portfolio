@@ -1,18 +1,18 @@
 {
   "Slides": [
     {
-      "src": "../src/images/Slide01.png",
+      "src": "../../images/Slide01.png",
       "alt": "slide1-photo",
       "width": "200"
     },
 
     {
-      "src": "../src/images/Slide02.png",
+      "src": "../../images/Slide02.png",
       "alt": "slide2-photo",
       "width": "200"
     },
     {
-      "src": "../src/images/Slide03.png",
+      "src": "../../images/Slide03.png",
       "alt": "slide3-photo",
       "width": " 200"
     }

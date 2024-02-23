@@ -3,8 +3,8 @@ import "./Slideshow.css";
 
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-export const Slideshow = ({ data }) => {
-  const [Slides, setSlide] = useState(0);
+export const Slideshow = ({ images }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -12,45 +12,47 @@ export const Slideshow = ({ data }) => {
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, [Slides]);
+  }, [currentSlide]);
 
   const nextSlide = () => {
-    setSlide(Slides === data.length - 1 ? 0 : Slides + 1);
+    setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
   };
+
   const prevSlide = () => {
-    setSlide(Slides === 0 ? data.length - 1 : Slides - 1);
+    setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
   };
+
   return (
     <div className="carousel">
       <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
 
-      {data.map((item, idx) => {
-        return (
-          <img
-            src={item.src}
-            alt={item.alt}
-            width={item.width}
-            key={idx}
-            className={Slides === idx ? "slide" : "slide slide-hidden"}
-          />
-        );
-      })}
+      {images.map((image, idx) => (
+        <img
+          key={idx}
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          className={currentSlide === idx ? "slide" : "slide slide-hidden"}
+        />
+      ))}
+
       <BsArrowRightCircleFill
         className="arrow arrow-right"
         onClick={nextSlide}
       />
+
       <span className="indicators">
-        {data.map((_, idx) => {
-          return (
-            <button
-              key={idx}
-              onClick={() => setSlide(idx)}
-              className={
-                Slides === idx ? "indicator" : "indicator indicator-inactive"
-              }
-            ></button>
-          );
-        })}
+        {images.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentSlide(idx)}
+            className={
+              currentSlide === idx
+                ? "indicator"
+                : "indicator indicator-inactive"
+            }
+          />
+        ))}
       </span>
     </div>
   );
