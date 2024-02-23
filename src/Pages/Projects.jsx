@@ -1,5 +1,8 @@
 import "./Projects.css";
 import Navbar from "../components/Navbar";
+import LandingPagePhoto from "../images/Naruto.png";
+import ProductPagePhoto from "../images/ProductPage2.png";
+import WeatherAppPhoto from "../images/WeatherApp.png";
 
 function Projects() {
   return (
@@ -10,8 +13,8 @@ function Projects() {
       <ul className="cardWrapper">
         <li className="project01">
           <img
-            src={"/src/images/Naruto.png"}
-            alt="Top-logo"
+            src={LandingPagePhoto}
+            alt="LandingPage-photo"
             width="300"
             height=""
           />
@@ -33,12 +36,7 @@ function Projects() {
         </li>
 
         <li className="project02">
-          <img
-            src={"/src/images/product_page_2.png"}
-            alt="Top-logo"
-            width="300"
-            height="222"
-          />
+          <img src={ProductPagePhoto} alt="Top-logo" width="300" height="222" />
           <h3 className="ProjectTitle">Product Page</h3>
           <p>
             Upgrade your home with affordable luxury and transform your
@@ -60,12 +58,7 @@ function Projects() {
           </button>
         </li>
         <li className="project03">
-          <img
-            src={"/src/images/Weather_App.png"}
-            alt="Top-logo"
-            width="300"
-            height=""
-          />
+          <img src={WeatherAppPhoto} alt="Top-logo" width="300" height="" />
           <h3 className="ProjectTitle">Weather App</h3>
           <p>
             Stay ahead of the weather with our user-friendly app that provides

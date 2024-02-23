@@ -1,14 +1,10 @@
 import "./Logo.css";
+import LogoV2 from "../images/LogoV2.png";
 
 function Logo() {
   return (
     <div className="logo">
-      <img
-        src={"/src/images/Logo_v2.png"}
-        alt="Top-logo"
-        width="150"
-        height=""
-      />
+      <img src={LogoV2} alt="Top-logo" width="150" height="" />
     </div>
   );
 }
