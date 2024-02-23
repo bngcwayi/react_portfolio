@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Slideshow.css";
-import Slide01 from "../images/Slide01.png";
-import Slide02 from "../images/Slide02.png";
-import Slide03 from "../images/Slide03.png";
+
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 export const Slideshow = ({ data }) => {
