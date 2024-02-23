@@ -2,6 +2,15 @@ import "./About.css";
 import Navbar from "../components/Navbar";
 import AboutMePhoto from "../images/AboutMePhoto.png";
 import ReactIcon from "../images/ReactIcon.png";
+import JSIcon from "../images/JavascriptIcon.png";
+import HTMLIcon from "../images/HTMLIcon.png";
+import CSSIcon from "../images/CSSIcon.png";
+import PythonIcon from "../images/FigmaIcon.png";
+import FigmaIcon from "../images/FigmaIcon.png";
+import MiroIcon from "../images/MiroIcon.png";
+import PhotoshopIcon from "../images/PythonIcon.png";
+import GitIcon from "../images/GitIcon.png";
+import GithubIcon from "../images/GithubIcon.png";
 
 function About() {
   return (
@@ -28,89 +37,49 @@ function About() {
         <h1></h1>
         <div className="item1">
           <h6>React</h6>
-          <img src={ReactIcon} alt="ReactIcon" width="100" height="100" />
+          <img src={ReactIcon} alt="React-logo" width="100" height="100" />
         </div>
         <div className="item2">
           <h6>JavaScript</h6>
           {""}
-          <img
-            src={"/src/images/Javascript_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="100"
-          />
+          <img src={JSIcon} alt="JavaScript-logo" width="100" height="100" />
         </div>
         <div className="item3">
           <h6>HTML</h6>{" "}
-          <img
-            src={"/src/images/Html_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="100"
-          />
+          <img src={HTMLIcon} alt="HTML-logo" width="100" height="100" />
         </div>
         <div className="item4">
           <h6>CSS</h6>{" "}
-          <img
-            src={"/src/images/CSS_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="100"
-          />
+          <img src={CSSIcon} alt="CSS-logo" width="100" height="100" />
         </div>
         <div className="item5">
           <h6>Python</h6>{" "}
-          <img
-            src={"/src/images/Python_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="90"
-          />
+          <img src={PythonIcon} alt="Python-logo" width="100" height="90" />
         </div>
         <div className="item6">
           <h6>Figma</h6>{" "}
-          <img
-            src={"/src/images/Figma_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="90"
-          />
+          <img src={FigmaIcon} alt="Figma-logo" width="100" height="90" />
         </div>
         <div className="item7">
           <h6>Miro</h6>{" "}
-          <img
-            src={"/src/images/Miro_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="100"
-          />
+          <img src={MiroIcon} alt="Miro-logo" width="100" height="100" />
         </div>
         <div className="item8">
           <h6>Adobe Photoshop</h6>{" "}
           <img
-            src={"/src/images/Photoshop_Icon.png"}
-            alt="Top-logo"
+            src={PhotoshopIcon}
+            alt="Photoshop-logo"
             width="100"
             height="100"
           />
         </div>
         <div className="item9">
           <h6>Git</h6>{" "}
-          <img
-            src={"/src/images/Git_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="100"
-          />
+          <img src={GitIcon} alt="Git-logo" width="100" height="100" />
         </div>
         <div className="item10">
           <h6>Github</h6>{" "}
-          <img
-            src={"/src/images/Github_Icon.png"}
-            alt="Top-logo"
-            width="100"
-            height="100"
-          />
+          <img src={GithubIcon} alt="Github-logo" width="100" height="100" />
         </div>
       </div>
     </div>
