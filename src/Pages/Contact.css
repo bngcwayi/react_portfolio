@@ -101,7 +101,7 @@ textarea {
   width: 40%;
 }
 
-/* Media query for mobile devices */
+/* Media query for 600px screen size  */
 @media only screen and (max-width: 600px) {
   form {
     width: 100%;
